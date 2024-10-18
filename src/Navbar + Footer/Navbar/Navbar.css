@@ -1,0 +1,114 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  position: sticky;
+  margin-right: 110px;
+  margin-left: 110px;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5px 4%;
+  padding-top: 15px;
+  
+}
+
+.logo {
+  width: max(10vw, 130px);
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  flex: 1;
+  justify-content: center; /* This centers the navigation list */
+}
+
+.nav-list li {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--font-poppins);
+  transition: all ease-in-out 0.2s;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right li {
+  list-style: none;
+  font-family: var(--font-poppins);
+  color: #000;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.nav-right button {
+  background-color: var(--button-background);
+  width: 120px;
+  height: 40px;
+  color: white;
+  border-radius: 54px;
+  font-size: 16px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+/* Hover */
+.nav-right button:hover {
+  background-color: #4c22ac;
+}
+
+.nav-list li:hover {
+  color: var(--button-background);
+}
+.nav-right li:hover{
+  color: rgb(121, 121, 121);  
+}
+
+
+/* For tablets and smaller devices */
+@media (max-width: 938px) {
+  .Navbar{
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 0.5px 2%;
+    padding-top: 10px;
+  }
+  .nav-list{
+    display: none;
+  }
+}
+
+
+
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .Navbar{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .logo{
+    width: max(8vw, 100px);
+    align-self: center;
+  }
+  .nav-right button{
+    font-size: 11px;
+    width: 100px;
+    height: 35px;
+  }
+  .nav-right li{
+    font-size: 14px;
+  }
+  .nav-right{
+    gap: 15px;
+  }
+}

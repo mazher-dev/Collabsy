@@ -1,0 +1,165 @@
+.Hero {
+  padding: 0px 30px;
+  background-color: var(--primary-color);
+  margin: 25px;
+  border-radius: 29px;
+  height: 900px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 95px;
+  overflow: hidden;
+}
+
+.text h1 {
+  font-size: 50px;
+  line-height: 128.29%;
+  display: inline-block;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+.text {
+  padding-top: 13px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.text p {
+  color: rgb(206, 206, 206);
+  line-height: 128.29%;
+  text-align: center;
+  display: inline-block;
+  font-family: var(--paragraph-heading);
+}
+
+.buttons {
+  display: flex;
+  padding-top: 30px;
+  gap: 15px;
+}
+
+.buttons .first-button {
+  background-color: #ccff00;
+  border: none;
+  border-radius: 54px;
+  width: 150px;
+  height: 45px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.buttons .second-button {
+  width: 150px;
+  height: 45px;
+  border: 1px solid #fff;
+  border-radius: 54px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgba(174, 134, 255, 0);
+  color: white;
+  transition: all ease-in-out 0.2s;
+}
+
+.Hero img {
+  position: relative; /* Allows for positioning adjustments */
+  padding-top: 50px;
+  width: 90%; /* Increase the width beyond 100% to hide part of the image */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensures the image fills the container without distortion */
+}
+
+.buttons .first-button:hover {
+  background-color: #ffffff;
+}
+
+.buttons .second-button:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+@media (max-width: 963px) {
+  .Hero {
+    height: 700px;
+  }
+}
+
+@media (max-width: 728px) {
+  .Hero {
+    height: 550px;
+  }
+
+  .text h1 {
+    font-size: 30px;
+    padding-top: -5px;
+  }
+  .text p {
+    font-size: 10px;
+  }
+  .buttons .first-button {
+    width: 130px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .buttons .second-button {
+    width: 130px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 500px) {
+  .text h1 {
+    font-size: 23px;
+    padding-top: -5px;
+  }
+  .text p {
+    font-size: 8px;
+  }
+  .buttons .first-button {
+    width: 110px;
+    height: 37px;
+    font-size: 11px;
+  }
+  .buttons .second-button {
+    width: 110px;
+    height: 37px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 496px) {
+  .buttons .first-button {
+    width: 90px;
+    height: 37px;
+    font-size: 10px;
+  }
+  .buttons .second-button {
+    width: 90px;
+    height: 37px;
+    font-size: 10px;
+  }
+  .text p {
+    font-size: 5px;
+  }
+
+  .Hero {
+    height: 380px;
+    padding: 60px 10px;
+    margin: 15px;
+  }
+  .Hero img {
+    margin-top: -20px;
+  }
+  .text h1 {
+    font-size: 18px;
+    padding-top: -5px;
+  }
+  .buttons {
+    gap: 10px;
+    padding-top: 20px;
+  }
+}
