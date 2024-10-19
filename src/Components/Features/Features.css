@@ -1,0 +1,33 @@
+.Features{
+    padding: 50px 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+
+
+@media (max-width: 700px) {
+    .Features{
+        padding-top: 50px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .Features{
+        padding-top: 30px;
+    }
+
+}
+
+@media (max-width: 300px) {
+    .Features{
+        padding-top: 20px;
+    }
+
+}
+
+
+

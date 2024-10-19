@@ -1,0 +1,37 @@
+.text-1 {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+h1 {
+    color: #000;
+    
+}
+
+span {
+  margin: 0;
+  background: linear-gradient(180deg, #cab4ff 20%, #4d16ff 80%, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 600px) {
+    .text-1{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 515px) {
+    .text-1{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 421px) {
+    .text-1{
+        font-size: 7px;
+    }
+}

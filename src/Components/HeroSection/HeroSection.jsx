@@ -7,7 +7,7 @@ import background from '../../assets/bg-image-block.svg'
 const HeroSection = () => {
   return (
     <div className='Hero'>
-      <Titlesection text="Home"/>
+      <Titlesection text="Home" backgroundColor="#fff" textColor="#5e2bff"/>
       <div className='text'>
         <h1>Transform Your <br />
         Team Collaborationly</h1>
