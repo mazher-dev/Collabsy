@@ -1,0 +1,230 @@
+/* General Pricing Container */
+.pricing {
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+@media (max-width: 500px) {
+    .pricing {
+        padding-top: 20px;
+    }
+}
+
+.pricing-container {
+    padding: 0px 35px;
+}
+
+/* Pricing Toggle */
+.pricing-toggle {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 9999px;
+     /* This is the background behind the slider */
+    width: 217px;
+    padding: 4px;
+    justify-content: space-between;
+    gap: 20px;
+    transition: transform 0.3s ease
+}
+
+.toggle-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    transition: transform 0.3s ease
+     /* Background color behind the toggle */
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #5e2bff; /* Color of the toggle slider */
+    border-radius: 9999px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button {
+    z-index: 1;
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    background-color: #5e2bff;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease
+}
+
+.toggle-button.text-white {
+    color: #ffff;
+    font-size: 12px;
+    transition: transform 0.3s ease
+    
+}
+
+.toggle-button.text-slate-500 {
+    color: #5e2bff;
+    font-size: 12px;
+    background-color: #fff;
+    border: 1px solid;
+    transition: transform 0.3s ease
+}
+
+
+.toggle-button .text-slate-400 {
+    color: #9ca3af;
+}
+
+.toggle-button .text-indigo-200 {
+    color: #c7d2fe;
+}
+
+/* Pricing Grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Pricing Card */
+.pricing-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.most-popular {
+    border: 2px solid #5e2bff;
+}
+
+.popular-badge {
+    background-color: #5e2bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 9999px;
+    font-size: 14px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Pricing Header */
+.pricing-header {
+    margin-bottom: 20px;
+}
+
+.plan-name {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.currency {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.duration {
+    font-size: 18px;
+    color: #6b7280;
+    margin-left: 5px;
+}
+
+.description {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.purchase-btn {
+    display: inline-block;
+    background-color: #5e2bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-btn:hover {
+    background-color: #4c23cc;
+}
+
+/* Plan Includes */
+.plan-includes {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Features List */
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-item {
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .pricing-card {
+        padding: 20px;
+    }
+}
