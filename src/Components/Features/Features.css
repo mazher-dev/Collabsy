@@ -1,33 +1,104 @@
-.Features{
+.Features {
     padding: 50px 30px;
     align-items: center;
     display: flex;
     flex-direction: column;
     padding-top: 120px;
-}
-
-
-
-@media (max-width: 700px) {
-    .Features{
-        padding-top: 50px;
+  }
+  
+  .twosection {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 52px;
+  
+    /* Ensure both sections have the same width */
+    gap: 20px; /* Adds space between the sections */
+  }
+  
+  .left-section,
+  .right-section {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 20px 30px;
+  
+    /* Ensure both sections have the same width and height */
+    flex: 1; /* Makes both sections take equal space */
+    height: 100%; /* Ensures both sections stretch equally in height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+    padding-bottom: 60px;
+  }
+  
+  .left-section img,
+  .right-section img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    align-items: center;
+  }
+  
+  .twosection h1 {
+    line-height: 128.29%;
+    font-weight: 500;
+    font-family: var(--font-poppins);
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  
+  .twosection p {
+    line-height: 128.29%;
+    font-weight: 300;
+    font-family: var(--paragraph-heading);
+    color: #000;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 700px) {
+    .Features {
+      padding-top: 50px;
     }
-
-}
-
-@media (max-width: 500px) {
-    .Features{
-        padding-top: 30px;
+    
+    .twosection {
+      flex-direction: column; /* Stack sections vertically on smaller screens */
     }
-
-}
-
-@media (max-width: 300px) {
-    .Features{
-        padding-top: 20px;
+    
+    .left-section,
+    .right-section {
+      width: 100%; /* Each section takes full width on smaller screens */
     }
-
-}
-
-
-
+  }
+  
+  @media (max-width: 500px) {
+    .Features {
+      padding-top: 30px;
+    }
+    
+    .twosection{
+        padding: 25px 0px;
+    }
+    .twosection h1{
+        font-size: 15px;
+    }
+    .twosection p{
+        font-size: 10px;
+    }
+    .left-section,
+  .right-section {
+    padding-bottom: 20px;
+    
+  }
+  }
+  
+  @media (max-width: 300px) {
+    .Features {
+      padding-top: 20px;
+    }
+  }
+  
