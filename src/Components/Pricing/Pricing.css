@@ -228,3 +228,20 @@
         padding: 20px;
     }
 }
+
+
+@media (max-width: 500px){
+    .plan-name{
+        font-size: 20px;
+    }
+    .description{
+        font-size: 13px;
+    }
+
+    .purchase-btn{
+        font-size: 9px;
+    }
+    .feature-item{
+        font-size: 10px;
+    }
+}
