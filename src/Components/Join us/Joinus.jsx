@@ -9,11 +9,11 @@ const Joinus = () => {
         <h6 className="text-white font-bold text-4xl mb-2 texthead">
           Let’s Join With Us
         </h6>
-        <h1 className="text-white text-1xl md:text-1xl font-thin mb-4 paragra">
+        <h1 className="text-white text-1xl md:text-1xl font-thin mb-4 paragra text-left ">
           By Joining and enjoying our panel, you can make the <br /> job you do
           as a recruiter easier
         </h1>
-        <button className="bg-[#ccff00] text-black py-2 px-12 rounded-[54px] transition-colors duration-300 hover:bg-white hover:text-black">
+        <button className="bg-[#ccff00] text-black py-2 px-12 rounded-[54px] transition-colors duration-300 hover:bg-white hover:text-black flex">
           Join Us
         </button>
       </div>

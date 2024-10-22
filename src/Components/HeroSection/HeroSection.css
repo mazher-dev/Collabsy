@@ -40,6 +40,7 @@
   display: flex;
   padding-top: 30px;
   gap: 15px;
+  text-align: center;
 }
 
 .buttons .first-button {
@@ -51,6 +52,9 @@
   font-size: 16px;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .buttons .second-button {
@@ -59,10 +63,13 @@
   border: 1px solid #fff;
   border-radius: 54px;
   font-size: 16px;
-  cursor: pointer;
+  cursor: pointer; /* Keep this to show pointer on hover */
   background-color: rgba(174, 134, 255, 0);
   color: white;
   transition: all ease-in-out 0.2s;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .Hero img {
