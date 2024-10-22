@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react'; // Ensure useEffect is imported
+import React, { useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     useEffect(() => {
         const handleScroll = () => {
-            const navbar = document.getElementsByClassName('Navbar')[0]; // Get the first element with the class 'Navbar'
+            const navbar = document.getElementsByClassName('Navbar')[0];
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
             } else {
@@ -13,27 +14,25 @@ const Navbar = () => {
             }
         };
 
-        // Add event listener for scroll
         window.addEventListener('scroll', handleScroll);
 
-        // Cleanup function to remove the event listener
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []); // Empty dependency array to run only on mount and unmount
+    }, []);
 
     return (
-        <div className='Navbar'>
-            <img src={logo} alt="Logo" className="logo" />
+        <div className="Navbar">
+            <Link to="/"><img src={logo} alt="Logo" className="logo" /></Link>
             <ul className="nav-list">
-                <li>Home</li>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>About us</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/features">Features</Link></li>
+                <li><Link to="/pricing">Pricing</Link></li>
+                <li><Link to="/about-us">About Us</Link></li>
             </ul>
             <div className="nav-right">
-                <li>Login</li>
-                <button onClick={() => { /* Your onClick logic here */ }}>Sign up</button>
+                <Link to="/login"><li>Login</li></Link>
+                <Link to="/sign-up"><button>Sign up</button></Link>
             </div>
         </div>
     );
