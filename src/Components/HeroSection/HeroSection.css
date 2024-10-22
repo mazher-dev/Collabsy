@@ -27,12 +27,13 @@
   gap: 9px;
 }
 
-.text p {
+.paragra {
   color: rgb(206, 206, 206);
   line-height: 128.29%;
   text-align: center;
   display: inline-block;
   font-family: var(--paragraph-heading);
+  font-weight: 300;
 }
 
 .buttons {

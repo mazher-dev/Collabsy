@@ -6,6 +6,7 @@ import Features from './Components/Features/Features'
 import Pricing from './Components/Pricing/Pricing'
 import Contact from './Components/Contact/Contact'
 import Joinus from './Components/Join us/Joinus'
+import Footer from './Navbar + Footer/footer/Footer'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Pricing />
       <Contact />
       <Joinus />
+      <Footer />
     </div>
   )
 }
