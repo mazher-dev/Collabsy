@@ -2,14 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1000;
-  position: sticky;
+  z-index: 1000; 
   margin-right: 110px;
   margin-left: 110px;
   background-color: rgb(255, 255, 255);
   padding: 0.5px 4%;
   padding-top: 15px;
-  
+  padding-bottom: 15px;
+  position: sticky; 
+  top: 0; /* Ensures it sticks to the top */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo {
@@ -31,6 +33,7 @@
   cursor: pointer;
   font-family: var(--font-poppins);
   transition: all ease-in-out 0.2s;
+  
 }
 
 .nav-right {
@@ -61,7 +64,7 @@
   transition: all ease-in-out 0.2s;
 }
 
-/* Hover */
+/* Hover Effects */
 .nav-right button:hover {
   background-color: #4c22ac;
 }
@@ -69,46 +72,65 @@
 .nav-list li:hover {
   color: var(--button-background);
 }
-.nav-right li:hover{
+
+.nav-right li:hover {
   color: rgb(121, 121, 121);  
 }
 
-
 /* For tablets and smaller devices */
 @media (max-width: 938px) {
-  .Navbar{
+  .Navbar {
     margin-right: 50px;
     margin-left: 50px;
     padding: 0.5px 2%;
     padding-top: 10px;
   }
-  .nav-list{
+  .nav-list {
     display: none;
   }
 }
 
-
-
-
 /* For mobile devices */
 @media (max-width: 480px) {
-  .Navbar{
+  .Navbar {
     margin-right: 10px;
     margin-left: 10px;
+    padding: 10px 20px;
   }
-  .logo{
+  .logo {
     width: max(8vw, 100px);
     align-self: center;
   }
-  .nav-right button{
+  .nav-right button {
     font-size: 11px;
     width: 100px;
     height: 35px;
   }
-  .nav-right li{
+  .nav-right li {
     font-size: 14px;
   }
-  .nav-right{
+  .nav-right {
     gap: 15px;
+  }
+}
+
+/* Add styles for the scrolled state */
+.Navbar.scrolled {
+  box-shadow: 0 17px 50px rgba(0, 0, 0, 0.2); /* Optional shadow effect when scrolled */
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background when scrolled */
+  animation: fadeIn 0.5s ease forwards;         /* Apply the fade-in animation */
+  border-radius: 50px;
+  top: 22px;
+  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 30s;
+    transform: translateY(-10px); /* Slide from above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Original position */
   }
 }
