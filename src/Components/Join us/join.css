@@ -1,57 +1,41 @@
-.joinus{
-    
-    background: linear-gradient(95.04deg, #5e2bff, #3b218b 70.26%, #291c52);
-    height: 300px;
-    overflow: hidden;
-    align-items: center;
-    display: flex;
-    margin: 100px 50px;
-    border-radius: 54px;
-    padding-left: 100px;
-    justify-content: space-between;
-}
 
-h3{
-    font-size: 30px;
-    font-family: var(--font-poppins);
-    font-weight: 800;
-    color: white;
-    padding-bottom: 7px;
-}
-
-p{
-    font-size: 12px;
-    color: white;
-    font-family: var(--paragraph-heading);
-    padding-bottom: 12px;
-}
-.button{
-    background-color: #ccff00;
-    border-radius: 54px;
-    border: none;
-    color: black;
-    font-size: 17px;
-    align-items: center;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    
-}
-
-.button:hover{
-    color: black;
-    background-color: #fff;
-}
-
-.left{
-    width: 100%;
-}
-.right{
-    justify-content: right;
-    display: flex;
-}
 
 .right img {
     width: 110%; /* Adjust the width to your desired value */
     
     margin-top: 100px;
+}
+
+@media (max-width: 800px){
+    .right img{
+        display: none;
+    }
+}
+
+@media (max-width: 460px){
+    .joinus{
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .texthead{
+        font-size: 18px;
+    }
+    .paragra{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 460px){
+    .paragra{
+        font-size: 7px;
+    }
+    .joinus{
+        align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .text-h{
+        font-size: 8px;
+    }
 }

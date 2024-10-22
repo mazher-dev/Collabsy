@@ -1,5 +1,5 @@
 .text-1 {
-  font-size: 16px;
+  font-size: 35px;
   margin: 0;
   margin-top: 18px;
   font-weight: 700;
@@ -23,18 +23,21 @@ span {
 
 @media (max-width: 600px) {
     .text-1{
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 515px) {
-    .text-1{
-        font-size: 11px;
+    .new-text{
+        font-size: 20px;
     }
+
 }
 
+
+
 @media (max-width: 421px) {
-    .text-1{
-        font-size: 7px;
+    .new-text{
+        font-size: 11px;
     }
 }

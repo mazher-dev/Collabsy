@@ -11,7 +11,7 @@ const HeroSection = () => {
       <div className='text'>
         <h1>Transform Your <br />
         Team Collaborationly</h1>
-        <p>Collabsy streamlines team tasks, communication, and progress <br/> tracking—all in one place. Achieve more with less effort!</p>
+        <p className='font.light text-white '>Collabsy streamlines team tasks, communication, and progress <br/> tracking—all in one place. Achieve more with less effort!</p>
       </div>
       <div className='buttons'>
         <button className='first-button'>Get started</button>
