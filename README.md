@@ -59,5 +59,5 @@ Check out the live site here: https://colllabsy.netlify.app/
 ```    
 ## Contributing
 
-Feel free to submit issues or pull requests to contribute to the development of Admin Dashboard. Let's make it even better!
+Feel free to submit issues or pull requests to contribute to the development of Admin Dashboard. Let's make it even better!!
 
