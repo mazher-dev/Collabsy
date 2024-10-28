@@ -19,7 +19,7 @@ const Features = () => {
       <div className='twosection'>
         <div className='left-section'>
             <img src={graph} alt="" />
-            <h1>Real-Time Data Charts</h1>
+            <h1 >Real-Time Data Charts</h1>
             <p>Visualize project metrics at a glance and make informed decisions quickly.</p>
         </div>
         <div className='right-section'>

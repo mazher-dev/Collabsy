@@ -19,6 +19,7 @@
   text-align: center;
   color: white;
 }
+
 .text {
   padding-top: 13px;
   align-items: center;
@@ -41,6 +42,10 @@
   padding-top: 30px;
   gap: 15px;
   text-align: center;
+}
+
+.buttons a{
+  text-decoration: none;
 }
 
 .buttons .first-button {
