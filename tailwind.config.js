@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -13,6 +12,8 @@ export default {
       },
     },
   },
+  corePlugins: {
+    preflight: false, // Disable Tailwind's base reset
+  },
   plugins: [],
-}
-
+};
