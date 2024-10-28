@@ -26,6 +26,7 @@
   gap: 35px;
   flex: 1;
   justify-content: center; /* This centers the navigation list */
+  text-decoration: none;
 }
 
 .nav-list li {
@@ -33,7 +34,10 @@
   cursor: pointer;
   font-family: var(--font-poppins);
   transition: all ease-in-out 0.2s;
-  
+  text-decoration: none;
+}
+.nav-list li a{
+  text-decoration: none;
 }
 
 .nav-right {
@@ -49,8 +53,11 @@
   font-size: 17px;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
+  
 }
-
+.nav-right  a{
+  text-decoration: none;
+}
 .nav-right button {
   background-color: var(--button-background);
   width: 120px;

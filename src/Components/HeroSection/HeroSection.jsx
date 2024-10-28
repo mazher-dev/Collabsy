@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./HeroSection.css";
 import Titlesection from "../titlesection/titlesection";
 import background from "../../assets/bg-image-block.svg";
