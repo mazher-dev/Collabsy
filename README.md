@@ -1,7 +1,7 @@
 
 # Collabsy
 
-Collabsy is a comprehensive project management and team collaboration tool designed to streamline team tasks, enhance communication, and simplify progress tracking—all in one intuitive platform. With a user-friendly admin dashboard, Collabsy empowers teams to achieve more with less effort. Transform your team collaboration experience and elevate productivity today!
+Collabsy is a comprehensive project management and team collaboration tool designed to streamline team tasks, enhance communication, and simplify progress tracking—all in one intuitive platform. With a user-friendly admin dashboard, Collabsy empowers teams to achieve more with less effort. Transform your team collaboration experience and elevate productivity today
 
 Check out the live site here: https://colllabsy.netlify.app/
 
