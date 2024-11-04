@@ -8,6 +8,7 @@ export default {
       colors: {
         purple: {
           600: '#5e2bff',  // Custom purple color
+          700: "#ffffff"
         },
       },
     },
