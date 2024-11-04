@@ -40,7 +40,7 @@ Check out the live site here: https://colllabsy.netlify.app/
 
 6. **Adjust Workflows**: Teams can customize workflows and processes to better fit their unique needs, enhancing overall productivity.
 
-7. **Demo Mode**: Users can explore a demo version of Collabsy to familiarize themselves with its features before committing to a full account.
+7. **Demo Mode**: Users can explore a demo version of Collabsy to familiarize themselves with its features before committing to a full account
 
 ## Getting Started
 
